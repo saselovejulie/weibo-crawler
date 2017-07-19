@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: weibo-crawler
+  main:
+    web-environment: false
+
+logging:
+  level:
+    root: INFO
+
+config:
+  threadCount: 10
+  userQueue: WEIBO-CLOUD-USER-QUEUE
+  userResultQueue: WEIBO-CLOUD-RESULT-NEW-USER
+  ipQueue: WEIBO-CLOUD-IP-QUEUE
+  userRelationResultQueue: WEIBO-CLOUD-RESULT-USER-RELATION-QUEUE
+  userRelationQueue: WEIBO-CLOUD-USER-RELATION-QUEUE
+  maxRetryTime: 5
+  userAgent:
+    - Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
+    - MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+    - Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; NX505J Build/KVT49L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.5.2.598 U3/0.8.0 Mobile Safari/534.30
+    - Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/13G34 UCBrowser/10.9.19.815 Mobile
+    - Mozilla/5.0 (Linux; Android 4.4.2; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/7.1 baiduboxapp/7.5.1 (Baidu; P1 4.4.2)
+    - Mozilla/5.0 (Linux; Android 4.4.2; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 Weibo (nubia-NX505J__weibo__6.8.0__android__android4.4.2) tae_sdk_a_2.0.0 AliApp(BC/2.0.0)
+    - Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G34 Weibo (iPhone8,1__weibo__6.8.1__iphone__os9.3.3) AliApp(BC/2.1) tae_sdk_ios_2.1 havana
+    - Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; NX505J Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.8 Mobile Safari/537.36
+    - Mozilla/5.0 (iPhone 6s; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/6.0 MQQBrowser/6.8.1 Mobile/13G34 Safari/8536.25 MttCustomUA/2
